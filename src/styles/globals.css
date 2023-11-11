@@ -1,5 +1,6 @@
 @tailwind utilities;
-
+@tailwind base;
+@tailwind components;
 :root {
   --primary-color: #FFA200;
   --second-color:  #007BFF;
@@ -17,47 +18,18 @@
   --normal-line-height:150%;
 }
 
-
-
-body {
+*{
   box-sizing: none;
   margin: 0;
   padding: 0;
+}
+
+body {
+  
   .main-bg{
     background-color: var(--primary-color);
   }
- .main-button{
-  background-color: var(--second-color);
-  color:var(--light-color);
-  font-size:var(--h6-size);
-  font-weight: 600;
-  padding:16px 40px;
-  border: none;
-  border-radius: 12px;
- }
- .text{
-  color:var(--light-color)
- }
- .h6{
-  font-size: var(--h6-size);
-  line-height: var(--normal-line-height);
- }
- .h5{
-  font-size: var(--h5-size);
-  line-height: var(--normal-line-height);
- }
- .h4{
-  font-size: var(--h4-size);
-  line-height: var(--normal-line-height);
- }
- .h3{
-  font-size: var(--h3-size);
-  line-height: var(--normal-line-height);
- }
- .h2{
-  font-size: var(--h2-size);
-  line-height: var(--small-line-height);
- }
+ 
  .container-gradient{
   width: 100%;
   height: 100vh;

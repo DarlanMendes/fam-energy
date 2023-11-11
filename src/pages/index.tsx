@@ -9,7 +9,7 @@ export default function Home() {
   }
   return (
     <main
-      className={`h-screen flex flex-col justify-center items-center w-screen ${inter.className}`}
+      className={`h-screen overflow-x-hidden flex flex-col justify-center items-center w-screen ${inter.className}`}
     >
     <Navbar/> 
     <SecaoBanner/>
