@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import Navbar from '@/components/navbar'
 import SecaoBanner from '@/components/secaoBanner'
 import Footer from '@/components/footer'
+import FAQ from '@/components/faq'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
     >
     <Navbar/> 
     <SecaoBanner/>
+    <FAQ/>
     <Footer/>
     
 
