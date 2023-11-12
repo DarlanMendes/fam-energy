@@ -20,7 +20,7 @@ export default function SecaoBanner() {
                 <div className="flex justify-center">
                     <SocialIcon link={'https://wa.me/5585997509213'} img={whatsapp}/>
                     <SocialIcon link={'https://facebook.com/famenergy'} img={facebook}/>
-                    <SocialIcon link={'https://instagram.com/famenergy'} img={instagram}/>
+                    <SocialIcon link={'https://instagram.com/fam.energy'} img={instagram}/>
                 </div>
                 </div>
                
