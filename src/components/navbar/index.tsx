@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import { IconContext } from 'react-icons';
+import {GiHamburgerMenu} from 'react-icons/gi'
 interface NavbarItemProps{
     text:string;
 }
@@ -17,11 +19,16 @@ export default function Navbar() {
         <div className={`flex gap-2 main-bg text w-screen justify-around items-center py-4 fixed top-0`}>
             <Image src='/fam logo.png' alt='' width={60} height={60} />
 
-            <ul className={`flex gap-8 main-bg text`}>
+            <ul className={` gap-8 main-bg text-white hidden md:flex`}>
                 {listaSecoes.map((secao, index) => (
                     <NavbarItem key ={index} text={secao}/>
 ))}
             </ul>
+            <IconContext.Provider value={{ color: "white", className: "text-lg text-white flex sm:hidden" }}>
+                    <GiHamburgerMenu/>
+            </IconContext.Provider>
+            
+
         </div>
     )
 }
