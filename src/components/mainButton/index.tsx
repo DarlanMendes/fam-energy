@@ -25,7 +25,7 @@ export default function MainButton({ text, onClickHandler, link, externalLink }:
 
     return (
         <button 
-        className={`bg-blue-600 text-white py-3 rounded-xl border-0 md:w-1/2`}
+        className={`bg-blue-600 text-white py-3 rounded-xl border-0 px-4 md:px-8 lg:px-12`}
         onClick={()=>{handleClick()}}>
             {text}
         </button>

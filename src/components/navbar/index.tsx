@@ -16,6 +16,7 @@ export default function Navbar() {
     const listaSecoes = ['Início', 'Serviços', 'Produtos', 'Testemunhos']
 
     return (
+        // <IconContext.Provider value={{ color: "white", className: "text-lg text-white flex sm:hidden focus:bg-red-500" }} >
         <div className={`flex gap-2 main-bg text w-screen justify-around items-center py-4 fixed top-0 `}>
             <Image src='/fam logo.png' alt='' width={60} height={60} />
 
@@ -25,9 +26,9 @@ export default function Navbar() {
                 ))}
             </ul>
             <button className='peer/hamburguer' >
-                <IconContext.Provider value={{ color: "white", className: "text-lg text-white flex sm:hidden focus:bg-red-500" }} >
-                    <GiHamburgerMenu />
-                </IconContext.Provider>
+               
+                    <GiHamburgerMenu className="text-lg text-white flex sm:hidden focus:bg-red-500 "/>
+               
 
             </button>
 
@@ -43,5 +44,6 @@ export default function Navbar() {
 
 
         </div>
+        // </IconContext.Provider>
     )
 }
