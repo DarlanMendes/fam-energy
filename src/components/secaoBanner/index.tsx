@@ -18,7 +18,7 @@ export default function SecaoBanner() {
                 <div className="flex flex-col gap-2 w-full items-center justify-center">
                 <MainButton text="Garanta Agora" />
                 <div className="flex justify-center">
-                    <SocialIcon link={'https://wa.me/5585986013045'} img={whatsapp}/>
+                    <SocialIcon link={'https://wa.me/5585997509213'} img={whatsapp}/>
                     <SocialIcon link={'https://facebook.com/famenergy'} img={facebook}/>
                     <SocialIcon link={'https://instagram.com/famenergy'} img={instagram}/>
                 </div>
