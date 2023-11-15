@@ -51,17 +51,21 @@ export default function Servico() {
 
     ]
     return (
-        <main className="bg-orange-200 w-full" id="Serviços">
-            <header className="p-6">
-                <h1 className="text-3xl"><strong>Nossos serviços</strong> </h1>
-                <span className="text-gray-700"> Serviços sob medida</span>
-            </header>
-            <section className="flex justify-center flex-col lg:flex-row ">
-                {servicos.map((servico) => (
-                    <CardServico servico={servico} />
-                ))}
+        <main className="bg-orange-200 w-full flex justify-center" id="Serviços">
+            <div className="max-w-[1000px]">
+                <header className="p-6 lg:pl-12">
+                    <h1 className="text-3xl"><strong>Nossos serviços</strong> </h1>
+                    <span className="text-gray-700"> Serviços sob medida</span>
+                </header>
+                <section className="flex justify-center flex-col lg:flex-row ">
+                    {servicos.map((servico) => (
+                        <CardServico servico={servico} />
+                    ))}
 
-            </section>
+                </section>
+
+            </div>
+
         </main>
     )
 }

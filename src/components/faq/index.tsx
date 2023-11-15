@@ -9,7 +9,7 @@ interface Props {
 }
 function ExpandableList(props: Props) {
     return (
-        <section className="flex flex-col p-4" id="Dúvidas">
+        <section className="flex flex-col p-4 max-w-[1200px] mx-auto" id="Dúvidas">
 
             {props.questions && props.questions.map((question, index) => (
                 <div className="flex flex-col items-start" key={index}>
@@ -44,8 +44,8 @@ export default function FAQ() {
     { title: "Quais são os passos para a instalação de painéis solares em minha propriedade?", response: "O processo geralmente inclui uma avaliação do local, projeto do sistema, obtenção de licenças, instalação dos painéis, inspeções e conexão à rede elétrica. Nossa equipe orientará você em cada etapa, desde a avaliação inicial até a ativação do sistema." }
     ]
     return (
-        <div className="bg- w-screen flex flex-col justify-center p-8 ">
-            <h1 className="text-xl font-semibold">FAQ</h1>
+        <div className="bg- w-screen max-w-3xl flex flex-col justify-center p-8 ">
+            <h1 className="text-xl font-semibold ">FAQ</h1>
             <ExpandableList questions={questions} />
         </div>
     )
