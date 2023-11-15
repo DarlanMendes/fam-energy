@@ -58,8 +58,8 @@ export default function Servico() {
                     <span className="text-gray-700"> Serviços sob medida</span>
                 </header>
                 <section className="flex justify-center flex-col lg:flex-row ">
-                    {servicos.map((servico) => (
-                        <CardServico servico={servico} />
+                    {servicos.map((servico, index) => (
+                        <CardServico servico={servico} key={index}/>
                     ))}
 
                 </section>
