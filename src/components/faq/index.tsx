@@ -9,7 +9,7 @@ interface Props {
 }
 function ExpandableList(props: Props) {
     return (
-        <section className="flex flex-col p-4">
+        <section className="flex flex-col p-4" id="Dúvidas">
 
             {props.questions && props.questions.map((question, index) => (
                 <div className="flex flex-col items-start" key={index}>

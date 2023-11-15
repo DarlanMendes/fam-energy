@@ -13,7 +13,7 @@ function NavbarItem({ text }: NavbarItemProps) {
     )
 }
 export default function Navbar() {
-    const listaSecoes = ['Início', 'Serviços', 'Produtos', 'Testemunhos']
+    const listaSecoes = ['Início', 'Serviços', 'Produtos','Dúvidas','Testemunhos']
 
     return (
         // <IconContext.Provider value={{ color: "white", className: "text-lg text-white flex sm:hidden focus:bg-red-500" }} >
