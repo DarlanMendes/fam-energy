@@ -51,7 +51,7 @@ export default function Servico() {
 
     ]
     return (
-        <main className="bg-orange-200 w-full flex justify-center" id="Serviços">
+        <main className="bg-orange-200 w-full flex justify-center overflow-x-hidden" id="Serviços">
             <div className="max-w-[1000px]">
                 <header className="p-6 lg:pl-12">
                     <h1 className="text-3xl"><strong>Nossos serviços</strong> </h1>
