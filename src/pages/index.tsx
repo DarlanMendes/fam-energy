@@ -8,6 +8,7 @@ import Whatsapp from '@/components/whatsapp'
 import whatsapp from "../../public/whatsapp-icon.png"
 import { useEffect, useState } from 'react'
 import Sobre from '@/components/sobre'
+import Colaboradores from '@/components/colaboradores'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -38,6 +39,7 @@ useEffect(()=>{
     <SecaoBanner/>
     <Sobre/>
     <Servicos/>
+    <Colaboradores/>
     <FAQ/>
     <Footer/>
     <Whatsapp showWhatsapp={showWhatsapp} whatsapp={whatsapp}/>

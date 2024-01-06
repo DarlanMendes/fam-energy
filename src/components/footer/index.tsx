@@ -22,7 +22,7 @@ function FooterPart(props: Props) {
 }
 function Address(){
     return(
-    <div className="flex-1 pt-3 px-8 pb-12">
+    <div className=" pt-3 px-8 pb-12">
        <label className="font-bold flex flex-col pl-2 gap-2">
        Sede Fortaleza:
        <p className="font-medium" >
@@ -44,7 +44,7 @@ export default function Footer() {
     const listSite = ["Início", "Serviços", "Produtos", "Testemunhos"]
     const listRede = ["Facebook", "Instagram", "Whatsapp", "E-mail"]
     return (
-        <footer className="flex flex-col gap-12 main-bg w-screen justify-center text-white lg:px-24 sm:flex-row">
+        <footer className="flex flex-col gap-12 main-bg w-screen justify-center text-white lg:px-24 md:flex-row lg:items-center xl:w-screen pl-2">
             <FooterPart title="Site:" list={listSite} />
             <hr className="w-2/3 m-auto sm:hidden"/>
             <FooterPart title="Nossas Redes" list={listRede} />
