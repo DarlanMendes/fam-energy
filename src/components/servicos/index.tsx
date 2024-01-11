@@ -1,4 +1,4 @@
-
+import Carrousel from "../carrousel"
 interface Servico {
     servico: {
         tittle: string,
@@ -9,7 +9,7 @@ interface Servico {
 
 function CardServico({ servico }: Servico) {
     return (
-        <aside className="p-4 m-4 shadow-md bg-white rounded-md max-w-xs ">
+        <aside className="p-4 m-4 shadow-md bg-white rounded-md max-w-[290px] ">
             <header className="py-4">
                 <h1 className=" text-2xl"><strong>{servico.tittle}</strong></h1>
                 <span className="text-sm text-gray-500">{servico.subtittle}</span>
@@ -52,17 +52,18 @@ export default function Servico() {
     ]
     return (
         <main className="bg-orange-200 w-full flex justify-center overflow-x-hidden" id="Serviços">
-            <div className="max-w-[1000px]">
+            <div className="max-w-[1000px] flex flex-col ">
                 <header className="p-6 lg:pl-12">
                     <h1 className="text-3xl"><strong>Nossos serviços</strong> </h1>
                     <span className="text-gray-700"> Serviços sob medida</span>
                 </header>
-                <section className="flex justify-center flex-col lg:flex-row ">
+                <section className="flex flex-wrap  pl-4">
                     {servicos.map((servico, index) => (
                         <CardServico servico={servico} key={index}/>
                     ))}
 
                 </section>
+                <Carrousel />
 
             </div>
 
