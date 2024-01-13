@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { useRef } from 'react';
-import { IconContext } from 'react-icons';
 import { GiHamburgerMenu } from 'react-icons/gi'
 interface NavbarItemProps {
     text: string;
